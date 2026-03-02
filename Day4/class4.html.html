@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Styled Profile and Product Page</title>
+
+<style>
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#profile {
+  background-color: lightgreen; 
+  padding: 25px; 
+  border-width: 5px;
+  border-style: solid;
+  border-color: darkgreen;
+  width: 320px; 
+  margin: 40px auto;
+  text-align: center;
+}
+
+
+p {
+  color: rgb(60,60,60); 
+  margin: 10px;
+}
+
+
+#products {
+  width: 80%; 
+  margin: 20px auto;
+  min-width: 300px; 
+  max-width: 900px;
+
+
+.card {
+  border: 3px solid #333333;
+  border-radius: 15px;
+  padding: 15px; 
+  margin: 20px; 
+  background-color: hsl(45, 100%, 90%); 
+  width: 220px;
+}
+
+
+#banner {
+  height: 150px;
+  margin: 20px;
+  border: 3px dashed blue;
+  background-image: url("https://www.pexels.com/photo/pink-cherry-blossom-in-bloom-5719543/");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+form {
+  background: #eef url("https://www.pexels.com/photo/pink-petaled-flowers-closeup-photo-992734/") no-repeat right top;
+  padding: 20px;
+  margin: 30px auto;
+  width: 300px;
+  border-radius: 10px;
+}
+
+
+h2 {
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+  margin-bottom: 10px;
+}
+
+/* ---------- Common CSS Mistakes (Commented Out) ---------- */
+
+/* Wrong: missing semicolon */
+/* p { color: red background: blue; } */
+
+/* Wrong: missing unit */
+/* div { width: 300; } */
+
+/* Wrong: typo in property */
+/* h1 { colr: blue; } */
+
+/* Wrong selector usage */
+/* .#profile { color:red; }  cannot combine . and # */
+
+</style>
+</head>
+
+<body>
+
+<!-- Background Image Section -->
+<div id="banner"></div>
+
+<!-- Profile Section -->
+<section id="profile">
+  <h2>My Profile</h2>
+  <p>I am learning CSS fundamentals and box model concepts.</p>
+  <img src="https://www.pexels.com/photo/beautiful-cherry-blossoms-in-south-korea-31582698/" alt="profile"
+       style="border-radius:50%; border:4px solid black;">
+</section>
+
+<!-- Product Cards -->
+<section id="products">
+
+  <div class="card">
+    <h3>Notebook</h3>
+    <p>High quality ruled notebook.</p>
+    <p><del>BDT120</del> <strong>BDT90</strong></p>
+  </div>
+
+  <div class="card">
+    <h3>Pen</h3>
+    <p>Smooth writing ball pen.</p>
+    <p><del>BDT50</del> <strong>BDT35</strong></p>
+  </div>
+
+</section>
+
+<!-- Basic Form -->
+<form>
+  <h3>Contact Form</h3>
+
+  Name:<br>
+  <input type="text"><br><br>
+
+  Email:<br>
+  <input type="email"><br><br>
+
+  Message:<br>
+  <textarea></textarea><br><br>
+
+  <button type="submit">Send</button>
+</form>
+
+</body>
+</html>
